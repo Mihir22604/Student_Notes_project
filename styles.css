@@ -1,0 +1,305 @@
+/* Sidebar styling */
+.fixed-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #4488cb;
+  padding-top: 60px;
+  z-index: 1000;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.sidebar-content {
+  padding: 20px;
+}
+.three-dots {
+  width: 10px;
+  height: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+}
+
+.content {
+  margin-left: 260px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #343a40;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Edit Overlay */
+.profile-edit-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+/* Centered smaller popup window */
+/* .overlay-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 50%; 
+  max-width: 600px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+} */
+
+/* *********************** */
+.overlay-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-height: 80vh; /* Prevents exceeding the screen height */
+  overflow-y: auto; /* Enables vertical scrolling */
+}
+
+/* ************************* */
+
+/* Form layout: two columns but centered */
+form#editProfileForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center content */
+  gap: 20px;
+  max-width: 100%; /* Ensure it doesn't stretch beyond the modal */
+}
+
+/* Two columns with equal width, but smaller space */
+form#editProfileForm .col-md-6 {
+  flex: 0 0 45%; /* Take up 45% of the width for each column */
+  padding: 10px;
+}
+
+/* Form inputs styling */
+form#editProfileForm .form-control {
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Submit button styling */
+form#editProfileForm .btn-primary {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: auto;
+}
+
+/* Profile image preview styling */
+#profilePicPreview {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #4488cb;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* General layout styling */
+.col-md-6 {
+  padding: 10px;
+}
+
+/* Modal content */
+.modal-content {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 25px;
+  cursor: pointer;
+  color: red;
+}
+
+/* Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* Modal content layout */
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto; /* Adjust for better centering */
+  padding: 20px;
+  width: 50%; /* Reduced size for better layout */
+  max-width: 400px; /* Limit the width */
+  border-radius: 10px;
+  position: relative;
+  overflow-y: auto; /* Enable scrolling if content overflows */
+  max-height: 80vh; /* Prevent exceeding the screen height */
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 25px;
+  cursor: pointer;
+  color: red;
+}
+
+/* Style for folders in the modal */
+.modal-folder-card {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Profile Image Styling */
+.profile-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.dropdown .dropdown-menu {
+  min-width: 200px;
+  right: 0;
+}
+
+.dropdown-menu-end {
+  margin-top: 10px;
+}
+
+/* Profile Image and Sidebar */
+#profileImage, #profileDropdown {
+  width: 60px;
+  height: 60px;
+}
+
+#sidebar.collapsed {
+  transform: translateX(-250px);
+  transition: transform 0.3s ease-in-out;
+}
+
+#fileDisplay .col {
+  margin-bottom: 15px;
+}
+
+/* Split screen layout */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: white;
+}
+
+.right {
+  right: 0;
+  background-color: white;
+}
+
+/* Custom styles for the folder cards */
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+/* ****************************888 */
+
+/* Styling the profile information on the original page */
+#profileInfo {
+  margin-top: 20px;
+}
+
+#profileInfo h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#profileInfo p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+#profileEditOverlay {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  max-height: 700px;
+}
+
+/* Button Styling */
+#updateProfileBtn {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: #4488cb;
+  border: none;
+  color: white;
+}
+
+#updateProfileBtn:hover {
+  background-color: #30609b;
+  cursor: pointer;
+}
+/* Ensure image is centered and shows default icon */
+#profilePicPreview {
+  border: 3px solid #4488cb;
+  object-fit: cover;
+}

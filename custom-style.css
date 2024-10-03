@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #343a40;
+    padding: 20px;
+    color: white;
+}
+.storage-bar {
+    display: flex;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.storage-item {
+    height: 100%;
+}
+.photos { background-color: #a0a4f0; }
+.videos { background-color: #f2cd5d; }
+.docs { background-color: #f08687; }
+.others { background-color: #84d8aa; }
+.sidebar a {
+    color: white;
+    display: block;
+    margin: 15px 0;
+    font-size: 18px;
+}
+.sidebar-bottom {
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+}
+.btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    position: relative;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.files input {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    padding: 50px 0px;
+    text-align: center !important;
+    margin: 0;
+    width: 100% !important;
+}
+.files input:focus {
+    border: 1px solid #92b0b3;
+}
+.files {
+    position: relative;
+}
+.files:after {
+    pointer-events: none;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 50px;
+    right: 0;
+    height: 56px;
+    content: "";
+    background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);
+    display: block;
+    margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.container-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-box input[type="text"] {
+    flex-grow: 1;
+    margin-bottom: 5px;
+}
+.delete-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.container-box .checkbox {
+    margin-left: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
