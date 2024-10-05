@@ -1,0 +1,152 @@
+/* Header Styling */
+.header {
+    background-color: #2f3944;
+    padding: 10px;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .profile-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .profile-menu {
+    display: none;
+    position: absolute;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .recent-upload-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+  }
+  
+  .search-bar input {
+    width: 200px; /* Adjust search bar width */
+  }
+  
+  .recent-upload {
+    display: flex;
+    align-items: center;
+  }
+
+  /* **************************8 */
+  body {
+    margin: 0;
+    padding-top: 40px;
+    color: #2e323c;
+    background: #f5f6fa;
+    position: relative;
+    height: 100%;
+}
+
+.account-settings .user-profile .user-avatar {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.account-settings .user-profile .user-avatar img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+}
+
+.modal-header {
+    background-color: #007ae1;
+    color: white;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.modal-footer {
+    text-align: right;
+}
+
+.profile-icon img {
+    cursor: pointer;
+}
+
+#profilePicPreview {
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+}
+.profile-dropdown {
+  z-index: 9999;
+  width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-dropdown button {
+  margin: 5px 0;
+}
+
+/* *************************8 */
+.folder-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+.folder-header {
+  display: flex;
+  align-items: center;
+}
+
+.folder-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.folder-details {
+  flex-grow: 1;
+}
+
+.folder-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #3b3b3b;
+}
+
+.folder-teacher-name {
+  font-size: 0.875rem;
+  color: #888;
+}
+
+.folder-actions {
+  position: relative;
+}
+
+.folder-actions img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.file-icon {
+  cursor: pointer;
+}
